@@ -12,7 +12,8 @@ let isPowerOn = true;
 
 let volume = 0.5;
 slider.addEventListener('input', (e) => {
-  volume = e.target.value;  
+  volume = e.target.value;
+  renderBtnBad(currentBank, volume, isPowerOn)  
 });
 
 const renderBtnBad = (currBank, vol, isPowerOn) => {
